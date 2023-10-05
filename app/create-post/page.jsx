@@ -16,7 +16,6 @@ const CreatePost = () => {
   });
 
   const createPost = async (e) => {
-    console.log(post);
     e.preventDefault();
     setSubmiting(true);
 
@@ -30,7 +29,6 @@ const CreatePost = () => {
         }),
       });
 
-      console.log(res);
       if (res.ok) {
         router.push('/');
       }

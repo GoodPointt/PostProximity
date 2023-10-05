@@ -17,7 +17,6 @@ const updatePost = () => {
   });
 
   const updatePost = async (e) => {
-    console.log(post);
     e.preventDefault();
     setSubmiting(true);
 
@@ -32,7 +31,6 @@ const updatePost = () => {
         }),
       });
 
-      console.log(res);
       if (res.ok) {
         router.push('/');
       }

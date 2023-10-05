@@ -9,7 +9,6 @@ export const POST = async (req, res) => {
 
     const newPost = new Post({ creator: userId, text, tag });
     await newPost.save();
-    console.log('afterSave=>>>>');
 
     return new Response(JSON.stringify(newPost), { status: 201 });
   } catch (error) {
