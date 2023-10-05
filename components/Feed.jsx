@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import PostCard from './PostCard';
 
 const PostCardList = ({ data, handleTagClick }) => {
+  console.log(data);
   return (
     <div className="mt-16 prompt_layout">
       {data.length > 0 &&
