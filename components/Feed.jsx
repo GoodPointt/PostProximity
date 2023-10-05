@@ -6,7 +6,7 @@ import PostCard from './PostCard';
 const PostCardList = ({ data, handleTagClick }) => {
   console.log(data);
   return (
-    <div className="mt-16 prompt_layout">
+    <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-5">
       {data.length > 0 &&
         data.map((post) => (
           <PostCard
